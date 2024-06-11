@@ -1,0 +1,25 @@
+null = "null"
+
+origin_productions = {
+    "E11": ["E10 E11P"],
+    "E11P": ["op11 E10 E11P", null],
+    "E10": ["E9 E10P"],
+    "E10P": ["op10 E9 E10P", null],
+    "E9": ["E8 E9P"],
+    "E9P": ["op9 E8 E9P", null],
+    "E8": ["E7 E8P"],
+    "E8P": ["op8 E7 E8P", null],
+    "E7": ["E6 E7P"],
+    "E7P": ["op7 E6 E7P", null],
+    "E6": ["E5 E6P"],
+    "E6P": ["op6 E5 E6P", null],
+    "E5": ["E4 E5P"],
+    "E5P": ["op5 E4 E5P", null],
+    "E4": ["E3 E4P"],
+    "E4P": ["op4 E3 E4P", null],
+    "E3": ["E2 E3P"],
+    "E3P": ["op3 E2 E3P", null],
+    "E2": ["E1 E2P"],
+    "E2P": ["op2 E1 E2P", null],
+    "E1": ["( E11 )", "op1 E1", "id"],
+}
